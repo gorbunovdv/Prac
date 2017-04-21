@@ -1,0 +1,4 @@
+<map id="StatisticsEvent_" name="StatisticsEvent_">
+<area shape="rect" id="node2" href="$struct_play_event__.html" title="PlayEvent_" alt="" coords="5,80,95,107"/>
+<area shape="rect" id="node3" href="$struct_statistics_query_event__.html" title="StatisticsQueryEvent_" alt="" coords="119,80,272,107"/>
+</map>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/statistics.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/simulator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requestsgenerator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/radioprogram.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/events.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/structures.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/statistics.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/structures.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/events.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/catalog.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/requestsgenerator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/royalmanager.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/catalog.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/royalmanager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/radioprogram.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/simulator.h" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.5.1+ (/usr/bin/python3.5)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/Release" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/Debug" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/MinSizeRel" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/local/include" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/Release" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/Debug" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/Prac-a0a19ed8/a0a19ed8/MinSizeRel" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

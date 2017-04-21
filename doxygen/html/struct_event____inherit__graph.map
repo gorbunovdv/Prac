@@ -1,0 +1,4 @@
+<map id="Event_" name="Event_">
+<area shape="rect" id="node2" href="$struct_end_of_song_event__.html" title="EndOfSongEvent_" alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$struct_query_event__.html" title="QueryEvent_" alt="" coords="160,80,259,107"/>
+</map>

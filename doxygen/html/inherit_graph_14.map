@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$struct_query__.html" title="Query_" alt="" coords="5,56,69,83"/>
+<area shape="rect" id="node2" href="$struct_album_query__.html" title="AlbumQuery_" alt="" coords="118,5,219,32"/>
+<area shape="rect" id="node3" href="$struct_author_query__.html" title="AuthorQuery_" alt="" coords="117,56,220,83"/>
+<area shape="rect" id="node4" href="$struct_song_query__.html" title="SongQuery_" alt="" coords="121,107,216,133"/>
+</map>

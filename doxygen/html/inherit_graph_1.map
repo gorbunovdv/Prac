@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_album_describer.html" title="AlbumDescriber" alt="" coords="123,5,238,32"/>
+<area shape="rect" id="node3" href="$class_author_describer.html" title="AuthorDescriber" alt="" coords="123,56,239,83"/>
+<area shape="rect" id="node4" href="$class_genre_discriber.html" title="GenreDiscriber" alt="" coords="126,107,235,133"/>
+<area shape="rect" id="node5" href="$class_song_describer.html" title="SongDescriber" alt="" coords="127,157,235,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Query_" name="Query_">
+<area shape="rect" id="node2" href="$struct_album_query__.html" title="AlbumQuery_" alt="" coords="5,80,107,107"/>
+<area shape="rect" id="node3" href="$struct_author_query__.html" title="AuthorQuery_" alt="" coords="131,80,234,107"/>
+<area shape="rect" id="node4" href="$struct_song_query__.html" title="SongQuery_" alt="" coords="258,80,353,107"/>
+</map>

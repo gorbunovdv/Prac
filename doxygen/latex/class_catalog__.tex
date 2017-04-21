@@ -1,0 +1,52 @@
+\hypertarget{class_catalog__}{}\section{Catalog\+\_\+ Class Reference}
+\label{class_catalog__}\index{Catalog\+\_\+@{Catalog\+\_\+}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_catalog___1_1_album_entity}{Album\+Entity}
+\item 
+struct \hyperlink{struct_catalog___1_1_author_entity}{Author\+Entity}
+\item 
+struct \hyperlink{struct_catalog___1_1_genre_entity}{Genre\+Entity}
+\item 
+struct \hyperlink{struct_catalog___1_1_song_entity}{Song\+Entity}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Catalog\+\_\+} (std\+::string file\+Name)\hypertarget{class_catalog___abb39c516b154a11444e1f19afa33bf4e}{}\label{class_catalog___abb39c516b154a11444e1f19afa33bf4e}
+
+\item 
+const std\+::vector$<$ Song $>$ \& {\bfseries get\+Songs} ()\hypertarget{class_catalog___a5b4b4d737d7b02c1278c3e3286b7afd5}{}\label{class_catalog___a5b4b4d737d7b02c1278c3e3286b7afd5}
+
+\item 
+const std\+::vector$<$ Author $>$ \& {\bfseries get\+Authors} ()\hypertarget{class_catalog___af964934557300f1adc6558e112cc31fa}{}\label{class_catalog___af964934557300f1adc6558e112cc31fa}
+
+\item 
+const std\+::vector$<$ Album $>$ \& {\bfseries get\+Albums} ()\hypertarget{class_catalog___a0eba1e6b2ba562cd41e7360af16c2ef5}{}\label{class_catalog___a0eba1e6b2ba562cd41e7360af16c2ef5}
+
+\item 
+const std\+::vector$<$ Genre $>$ \& {\bfseries get\+Genres} ()\hypertarget{class_catalog___af8117e2c7d5ddc9d49c4ac707533d565}{}\label{class_catalog___af8117e2c7d5ddc9d49c4ac707533d565}
+
+\item 
+const std\+::vector$<$ Song $>$ \& {\bfseries get\+Songs\+By\+Genre} (Genre genre)\hypertarget{class_catalog___aba29098b0061c8d7b83cbe582b6861bf}{}\label{class_catalog___aba29098b0061c8d7b83cbe582b6861bf}
+
+\item 
+Author {\bfseries find\+Author} (std\+::string name)\hypertarget{class_catalog___a807b5dc84a686e893a40ebe70b6d6e19}{}\label{class_catalog___a807b5dc84a686e893a40ebe70b6d6e19}
+
+\item 
+Genre {\bfseries find\+Genre} (std\+::string name)\hypertarget{class_catalog___a0fee0f49821e1b52cd6c6e737a3f6e6f}{}\label{class_catalog___a0fee0f49821e1b52cd6c6e737a3f6e6f}
+
+\item 
+Album {\bfseries find\+Album} (std\+::string name, std\+::string author)\hypertarget{class_catalog___a11d75c63d4fd73a40d3ecd9e88913b72}{}\label{class_catalog___a11d75c63d4fd73a40d3ecd9e88913b72}
+
+\item 
+Song {\bfseries find\+Song} (std\+::string name, std\+::string album, std\+::string author)\hypertarget{class_catalog___a4c0fa02c603a172ae2853fd3c7377988}{}\label{class_catalog___a4c0fa02c603a172ae2853fd3c7377988}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+catalog.\+h\item 
+catalog.\+cpp\end{DoxyCompactItemize}

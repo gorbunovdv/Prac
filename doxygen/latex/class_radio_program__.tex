@@ -1,0 +1,57 @@
+\hypertarget{class_radio_program__}{}\section{Radio\+Program\+\_\+ Class Reference}
+\label{class_radio_program__}\index{Radio\+Program\+\_\+@{Radio\+Program\+\_\+}}
+
+
+Inheritance diagram for Radio\+Program\+\_\+\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_radio_program____inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Radio\+Program\+\_\+} (std\+::string name, Genre genre, int start, int duration, Statistics statistics)\hypertarget{class_radio_program___adddccea7716c357eea50ba8c325dcd9b}{}\label{class_radio_program___adddccea7716c357eea50ba8c325dcd9b}
+
+\item 
+Song {\bfseries pick\+Next\+Song} (Catalog catalog, int timestamp)\hypertarget{class_radio_program___a88bb1b26329c4f217a0192e1601ca13b}{}\label{class_radio_program___a88bb1b26329c4f217a0192e1601ca13b}
+
+\item 
+std\+::string {\bfseries get\+Name} ()\hypertarget{class_radio_program___abc521ae542ecdcaca987164f19d94d09}{}\label{class_radio_program___abc521ae542ecdcaca987164f19d94d09}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::map$<$ Song, double $>$ {\bfseries get\+Qualities} (Catalog catalog, int timestamp)=0\hypertarget{class_radio_program___a83a524f556b517f42401e28115e5ccfc}{}\label{class_radio_program___a83a524f556b517f42401e28115e5ccfc}
+
+\item 
+virtual void {\bfseries postprocess\+Song} (Song song, int timestamp)=0\hypertarget{class_radio_program___ab862ebc2865ee85472029f4f4dbea3f8}{}\label{class_radio_program___ab862ebc2865ee85472029f4f4dbea3f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}\hypertarget{class_radio_program___a67daa7da22d48eb820299db912a8bcd9}{}\label{class_radio_program___a67daa7da22d48eb820299db912a8bcd9}
+
+\item 
+Genre {\bfseries genre}\hypertarget{class_radio_program___a2d91fcad74fad26085757923f269d9d9}{}\label{class_radio_program___a2d91fcad74fad26085757923f269d9d9}
+
+\item 
+int {\bfseries start}\hypertarget{class_radio_program___a496269bda247969a56f0dc7ccb169c03}{}\label{class_radio_program___a496269bda247969a56f0dc7ccb169c03}
+
+\item 
+int {\bfseries duration}\hypertarget{class_radio_program___a7fa75a28695c1b571bf529bc4e90cab5}{}\label{class_radio_program___a7fa75a28695c1b571bf529bc4e90cab5}
+
+\item 
+Statistics {\bfseries statistics}\hypertarget{class_radio_program___a9978ec8a87c81907594efcea1408501b}{}\label{class_radio_program___a9978ec8a87c81907594efcea1408501b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+radioprogram.\+h\item 
+radioprogram.\+cpp\end{DoxyCompactItemize}
