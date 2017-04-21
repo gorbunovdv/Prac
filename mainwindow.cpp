@@ -6,6 +6,7 @@
 #include "authordescriber.h"
 #include "albumdescriber.h"
 #include "songdescriber.h"
+#include "simulationstatisticsform.h"
 #include <sstream>
 
 MainWindow::MainWindow(QWidget* parent) :
@@ -21,8 +22,8 @@ MainWindow::~MainWindow() {
 void MainWindow::on_loadStorageButton_clicked() {
     QString fileName = QFileDialog::getExistingDirectory(this, "Choose folder where storage is located");
     ui->simulateButton->setEnabled(false);
-    ui->storageStatisticsButton->setEnabled(false);
     ui->editTimeTableButton->setEnabled(false);
+    ui->statisticsButton->setEnabled(false);
     if (!fileName.isEmpty()) {
         catalog = CatalogLoader::loadCatalog(fileName.toUtf8().constData(), this);
         if (catalog != nullptr) {
@@ -50,8 +51,8 @@ Catalog CatalogLoader::loadCatalog(std::string fileName, MainWindow *window) {
 void MainWindow::on_loadTimetableButton_clicked() {
     QString fileName = QFileDialog::getOpenFileName(this, "Choose file where timetable is located");
     ui->simulateButton->setEnabled(false);
-    ui->storageStatisticsButton->setEnabled(false);
     ui->editTimeTableButton->setEnabled(false);
+    ui->statisticsButton->setEnabled(false);
     if (!fileName.isEmpty()) {
         simulator = TimetableLoader::loadTimetable(fileName.toUtf8().constData(), this);
         if (simulator != nullptr) {
@@ -109,6 +110,7 @@ void MainWindow::updateStorageInfo() {
 
 
 void MainWindow::on_editTimeTableButton_clicked() {
+    ui->statisticsButton->setEnabled(false);
     TimetableEditorForm* form = new TimetableEditorForm();
     form->show();
     form->acceptTimetable(simulator, catalog);
@@ -117,6 +119,7 @@ void MainWindow::on_editTimeTableButton_clicked() {
 void MainWindow::on_simulateButton_clicked() {
     statistics = simulator->simulate(catalog);
     updateStatistics();
+    ui->statisticsButton->setEnabled(true);
 }
 
 void MainWindow::updateStatistics() {
@@ -129,6 +132,7 @@ void MainWindow::updateStatistics() {
     for (int i = 0; i < days; i++) {
         auto* tab = new QWidget();
         QListWidget* listWidget = new QListWidget(tab);
+        listWidget->setFont(QFont("Courier", 9));
         listWidget->setGeometry(QRect(0, 0, tab->width(), tab->height()));
         int leftEdge = 24 * 3600 * i, rightEdge = 24 * 3600 * (i + 1) - 1;
         for (StatisticsEvent event : statistics->getEvents()) {
@@ -141,7 +145,6 @@ void MainWindow::updateStatistics() {
             item->setText(QString(text(stream.str()).c_str()));
             listWidget->addItem(item);
         }
-        listWidget->setSizeAdjustPolicy(QListWidget::AdjustToContents);
         ui->daysTabWidget->addTab(tab, tr(("Day" + std::to_string(i + 1)).c_str()));
     }
 }
@@ -203,4 +206,10 @@ void MainWindow::on_treeWidget_doubleClicked(const QModelIndex &index) {
                                        invtext(index.parent().parent().data().toString().toUtf8().constData())), catalog
         );
     }
+}
+
+void MainWindow::on_statisticsButton_clicked() {
+    auto* window = new SimulationStatisticsForm();
+    window->acceptStatistics(catalog, statistics);
+    window->show();
 }

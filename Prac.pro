@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     genrediscriber.cpp \
     authordescriber.cpp \
     albumdescriber.cpp \
-    songdescriber.cpp
+    songdescriber.cpp \
+    simulationstatisticsform.cpp
 
 HEADERS  += mainwindow.h \
     structures.h \
@@ -43,14 +44,16 @@ HEADERS  += mainwindow.h \
     genrediscriber.h \
     authordescriber.h \
     albumdescriber.h \
-    songdescriber.h
+    songdescriber.h \
+    simulationstatisticsform.h
 
 FORMS    += mainwindow.ui \
     timetableeditorform.ui \
     genrediscriber.ui \
     authordescriber.ui \
     albumdescriber.ui \
-    songdescriber.ui
+    songdescriber.ui \
+    simulationstatisticsform.ui
 
 DISTFILES += \
     Prac.pro.user \

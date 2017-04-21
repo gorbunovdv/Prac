@@ -37,6 +37,8 @@ private slots:
 
     void on_treeWidget_doubleClicked(const QModelIndex &index);
 
+    void on_statisticsButton_clicked();
+
 private:
     void loadStorage();
 

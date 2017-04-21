@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1108</width>
+    <width>1150</width>
     <height>657</height>
    </rect>
   </property>
@@ -17,8 +17,8 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>10</y>
+      <x>930</x>
+      <y>20</y>
       <width>174</width>
       <height>231</height>
      </rect>
@@ -65,22 +65,12 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="storageStatisticsButton">
+      <widget class="QPushButton" name="statisticsButton">
        <property name="enabled">
         <bool>false</bool>
        </property>
        <property name="text">
-        <string>Storage Statistics</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="simulationRawEventsButton">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>Simulation Raw Events</string>
+        <string>Simulation Statistics</string>
        </property>
       </widget>
      </item>
@@ -129,7 +119,7 @@
       <rect>
        <x>0</x>
        <y>20</y>
-       <width>481</width>
+       <width>901</width>
        <height>561</height>
       </rect>
      </property>
@@ -144,7 +134,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1108</width>
+     <width>1150</width>
      <height>25</height>
     </rect>
    </property>
