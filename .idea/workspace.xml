@@ -13,8 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3678687a-2a6b-4a6b-8aa6-da7e231a7092" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainwindow.ui" afterPath="$PROJECT_DIR$/mainwindow.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainwindow.cpp" afterPath="$PROJECT_DIR$/mainwindow.cpp" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resume.pages" afterPath="$PROJECT_DIR$/Resume.pages" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="Prac.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -443,13 +447,21 @@
       <updated>1491747193307</updated>
       <workItem from="1491747194770" duration="12067000" />
       <workItem from="1492758103721" duration="1788000" />
+<<<<<<< Updated upstream
       <workItem from="1492767249275" duration="1254000" />
       <workItem from="1492771217595" duration="1506000" />
+=======
+      <workItem from="1492767249275" duration="1537000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="16615000" />
+=======
+    <option name="totallyTimeSpent" value="15392000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="1265" y="365" width="1855" height="1176" extended-state="6" />
