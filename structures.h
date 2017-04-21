@@ -12,7 +12,6 @@ struct Album_;
 struct Genre_;
 struct Play_;
 struct Query_;
-struct Event_;
 
 using Author = std::shared_ptr<Author_>;
 using Song = std::shared_ptr<Song_>;
@@ -20,7 +19,6 @@ using Album = std::shared_ptr<Album_>;
 using Genre = std::shared_ptr<Genre_>;
 using Play = std::shared_ptr<Play_>;
 using Query = std::shared_ptr<Query_>;
-using Event = std::shared_ptr<Event_>;
 
 struct Author_ {
     std::string name;
