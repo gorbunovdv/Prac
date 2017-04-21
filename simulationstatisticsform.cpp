@@ -3,16 +3,15 @@
 #include <QWidget>
 #include <QTableWidget>
 #include "types.h"
+#include <QSizePolicy>
 
 SimulationStatisticsForm::SimulationStatisticsForm(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::SimulationStatisticsForm)
-{
+    ui(new Ui::SimulationStatisticsForm) {
     ui->setupUi(this);
 }
 
-SimulationStatisticsForm::~SimulationStatisticsForm()
-{
+SimulationStatisticsForm::~SimulationStatisticsForm() {
     delete ui;
 }
 
@@ -36,28 +35,28 @@ void SimulationStatisticsForm::acceptStatistics(const Catalog &catalog, const St
     for (Genre genre : catalog->getGenres()) {
         std::map<Song, int> playCount;
         for (Play play : statistics->getPlays()) {
-            playCount[play->song]++;
+            if (play->song->genre == genre) {
+                playCount[play->song]++;
+            }
         }
-        std::vector<int, Song> ranking;
+        std::vector<std::pair<int, Song>> ranking;
         for (auto i : playCount) {
-            ranking.push_back(i.second, i.first);
+            ranking.push_back(std::make_pair(i.second, i.first));
         }
         sort(all(ranking)), reverse(all(ranking));
-
-        QWidget *tab = new QWidget();
-        ui->tabWidget->addTab(tab, tr(genre->name.c_str()));
-        QTableWidget* tableWidget = new QTableWidget(tab);
-        tableWidget->setRowCount(std::min(10, len(ranking)));
-        tableWidget->setColumnCount(5);
+        auto* tableWidget1 = new QTableWidget();
+        tableWidget1->setRowCount(std::min(10, len(ranking)));
+        tableWidget1->setColumnCount(5);
         for (int i = 0; i < 5; i++) {
-            ui->tableWidget->setColumnWidth(i, ui->tableWidget->width() / 5);
+            tableWidget1->setColumnWidth(i, ui->tabWidget->width() / 5 - 10);
         }
         for (int i = 0; i < len(ranking); i++) {
-            tableWidget->setItem(i, 0, text(std::to_string(i + 1), tabWidget));
-            tableWidget->setItem(i, 1, text(std::to_string(i + 1), tabWidget));
-            tableWidget->setItem(i, 2, text(std::to_string(i + 1), tabWidget));
-            tableWidget->setItem(i, 3, text(std::to_string(i + 1), tabWidget));
-            tableWidget->setItem(i, 4, text(std::to_string(i + 1), tabWidget));
+            tableWidget1->setItem(i, 0, text(std::to_string(i + 1), tableWidget1));
+            tableWidget1->setItem(i, 1, text(ranking[i].second->name, tableWidget1));
+            tableWidget1->setItem(i, 2, text(ranking[i].second->album->name, tableWidget1));
+            tableWidget1->setItem(i, 3, text(ranking[i].second->author->name, tableWidget1));
+            tableWidget1->setItem(i, 4, text(std::to_string(ranking[i].first), tableWidget1));
         }
+        ui->tabWidget->addTab(tableWidget1, tr(genre->name.c_str()));
     }
 }

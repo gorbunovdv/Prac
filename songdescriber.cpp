@@ -9,8 +9,7 @@ SongDescriber::SongDescriber(QWidget *parent) :
     ui->setupUi(this);
 }
 
-SongDescriber::~SongDescriber()
-{
+SongDescriber::~SongDescriber() {
     delete ui;
 }
 
@@ -27,4 +26,5 @@ void SongDescriber::updateInfo(const Song &song, const Catalog &catalog) {
     ui->albumName->setText(QString(text(song->album->name).c_str()));
     ui->authorName->setText(QString(text(song->author->name).c_str()));
     ui->duration->setText(QString(process(song->duration).c_str()));
+    ui->genreName->setText(QString(text(song->genre->name).c_str()));
 }
